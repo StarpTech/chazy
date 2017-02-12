@@ -7,13 +7,13 @@ Prototype - Implementing a massively scalable chat application based on EMQ and 
 - Realtime with Sockets
 - Authorization
 - Simple Web UI
+- Handling via RxJs
 
 # Client
 - REST API and Socket Gateway with [Hapi.js](https://github.com/hapijs/hapi)
 - NodeJs and [MQTT.js](https://github.com/mqttjs/MQTT.js)
 
 # Getting started
-
 
 1. Download [emqtt](http://emqtt.io/downloads)
 
