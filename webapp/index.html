@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var client = mqtt.connect('ws://127.0.0.1:8083/mqtt');
+
+      client.on('connect', function () {
+        client.subscribe("mqtt/demo", function() {
+          console.log("subscribed!")
+        });
+      })
+
+      client.on("message", function(topic, payload) {
+        console.log(topic, payload.toString())
+      });
+
+    </script>
+  </body>
+</html>
