@@ -9,5 +9,5 @@ Prototype - Implementing a massively scalable chat application based on EMQ and 
 - Simple Web UI
 
 # Client
-- REST API with [Hapi.js](https://github.com/hapijs/hapi)
+- REST API and Socket Gateway with [Hapi.js](https://github.com/hapijs/hapi)
 - NodeJs and [MQTT.js](https://github.com/mqttjs/MQTT.js)
