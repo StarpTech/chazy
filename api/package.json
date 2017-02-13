@@ -9,6 +9,7 @@
   "author": "Dustin Deus <deusdustin@gmail.com> (http://www.starptech.de)",
   "license": "ISC",
   "dependencies": {
+    "hapi": "^16.1.0",
     "mqtt": "^2.3.1"
   }
 }
