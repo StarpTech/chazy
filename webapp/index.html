@@ -4,12 +4,13 @@
   </head>
   <body>
     <script>
-      var client = mqtt.connect('ws://127.0.0.1:8083/mqtt');
+      var client = mqtt.connect('ws://127.0.0.1:8083/mqtt', { username: 'test', password: 'peter', clientId: 'web' });
 
       client.on('connect', function () {
         client.subscribe("mqtt/demo", function() {
           console.log("subscribed!")
         });
+        client.publish('mqtt/test', 'foo')
       })
 
       client.on("message", function(topic, payload) {

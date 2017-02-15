@@ -32,7 +32,7 @@ server.route({
     method: 'GET',
     path: '/mqtt/acl',
     handler: function (request, reply) {
-        console.log('TEST')
+        console.log('TEST ACL')
         reply('Hello, world!');
     }
 });
