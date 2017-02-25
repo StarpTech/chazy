@@ -14,8 +14,8 @@ server.route({
     method: 'POST',
     path: '/mqtt/auth',
     handler: function (request, reply) {
-        console.log('TEST')
-        reply('Hello, world!');
+        console.log('auth', request.payload)
+        reply()
     }
 });
 
@@ -23,8 +23,8 @@ server.route({
     method: 'POST',
     path: '/mqtt/superuser',
     handler: function (request, reply) {
-        console.log('TEST')
-        reply('Hello, world!');
+        console.log('superuser')
+        reply()
     }
 });
 
@@ -32,8 +32,8 @@ server.route({
     method: 'GET',
     path: '/mqtt/acl',
     handler: function (request, reply) {
-        console.log('TEST ACL')
-        reply('Hello, world!');
+        console.log('acl', request.query)
+        reply()
     }
 });
 
